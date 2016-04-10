@@ -1,0 +1,10 @@
+[Unit]
+Description=Lilconnect Server
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python2.7 /usr/lib/linconnect/linconnect_server.py
+
+[Install]
+WantedBy=default.target
+
